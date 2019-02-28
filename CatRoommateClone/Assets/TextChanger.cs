@@ -5,13 +5,13 @@ using TMPro;
 
 public class TextChanger : MonoBehaviour
 {
-    public TextMeshProUGUI text;
-    public string[] textStuff;
+    public TextMeshProUGUI Question;
+    public string[] Questions;
 
-    public void ChangeText()
+    private void Start()
     {
-        int randNum;
-        randNum = Random.Range(0,textStuff.Length);
-        text.text = textStuff[randNum];
+        Question.text = Questions[0];
     }
+    
+    
 }
