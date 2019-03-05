@@ -910,6 +910,8 @@ MonoBehaviour:
   - '"How do you feel about naps?"'
   - '"Don''t you hate birds?"'
   - '"Can I have some belly rubs?"'
+  - Let's be roommates!
+  - I can't live with you...
   Answer1: {fileID: 1078108629}
   Answer1A:
   - Great!

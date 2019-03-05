@@ -13,6 +13,7 @@ public class TextChanger : MonoBehaviour
     public string[] Answer2A;
     int count = 0;
 
+
     private void Start()
     {
         Question.text = Questions[0];
@@ -21,7 +22,10 @@ public class TextChanger : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (count == 7)
+        {
+            Question.text = Questions[7];
+        }
     }
     public void OnLeftClick()
     {
