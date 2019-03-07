@@ -2,24 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextChanger : MonoBehaviour
 {
-    public TextMeshProUGUI Question;
-    public string[] Questions;
-    public TextMeshProUGUI Answer1;
-    public string[] Answer1A;
-    public TextMeshProUGUI Answer2;
-    public string[] Answer2A;
-    int count = 0;
-    int correctCount = 0;
+    public TextMeshProUGUI _Question;
+    public string[] _Questions;
+    public TextMeshProUGUI _Answer1;
+    public string[] _Answer1A;
+    public TextMeshProUGUI _Answer2;
+    public string[] _Answer2A;
+    public Image _CatSprite;
+    //public Image[] _CatSpritess;
+    public Sprite[] _CatSprites;
+    int _count = 0;
+    int _correctCount = 0;
 
 
     private void Start()
     {
-        Question.text = Questions[0];
-        Answer1.text = Answer1A[0];
-        Answer2.text = Answer2A[0];
+        _Question.text = _Questions[0];
+        _Answer1.text = _Answer1A[0];
+        _Answer2.text = _Answer2A[0];
+        _CatSprite.sprite = _CatSprites[0];
     }
     private void Update()
     {
@@ -39,47 +44,49 @@ public class TextChanger : MonoBehaviour
         //{
             
         //}
-        if (count == 7 && correctCount > 3)
+        if (_count == 7 && _correctCount > 3)
         {
-            Question.text = Questions[7];
+            _Question.text = _Questions[7];
+            _CatSprite.sprite = _CatSprites[1];
         }
-        if (count == 7 && correctCount <= 3)
+        if (_count == 7 && _correctCount <= 3)
         {
-            Question.text = Questions[8];
+            _Question.text = _Questions[8];
+            _CatSprite.sprite = _CatSprites[7];
         }
     }
     public void OnLeftClick()
     {
-      count++;
+      _count++;
         //for (; count <= 7;)
-        if (count < 7)
+        if (_count < 7)
         {
-            Question.text = Questions[count];
-            Answer1.text = Answer1A[count];
-            Answer2.text = Answer2A[count];
+            _Question.text = _Questions[_count];
+            _Answer1.text = _Answer1A[_count];
+            _Answer2.text = _Answer2A[_count];
         }
-        if (count == 0 || count == 1 ||
-            count == 4 || count == 5 ||
-            count == 6)
+        if (_count == 0 || _count == 1 ||
+            _count == 4 || _count == 5 ||
+            _count == 6)
         {
             Debug.Log("Left answer increment");
-            correctCount++;
+            _correctCount++;
         }
         //return true;
     }
     public void OnRightClick()
     {
-        count++;
-        if (count < 7)
+        _count++;
+        if (_count < 7)
         {
-            Question.text = Questions[count];
-            Answer1.text = Answer1A[count];
-            Answer2.text = Answer2A[count];
+            _Question.text = _Questions[_count];
+            _Answer1.text = _Answer1A[_count];
+            _Answer2.text = _Answer2A[_count];
         }
-        if (count == 2 || count == 3)
+        if (_count == 2 || _count == 3)
         {
             Debug.Log("Right answer increment");
-            correctCount++;
+            _correctCount++;
         }
         //return true;
     }

@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 350182596}
   - component: {fileID: 350182595}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350182593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -35, y: 26}
+  m_AnchoredPosition: {x: -43.895508, y: 25.996782}
   m_SizeDelta: {x: 201.7, y: 201.7}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &350182595
@@ -900,8 +900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f0e4a7d6aadd143b8d042809a11c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: {fileID: 499924948}
-  Questions:
+  _Question: {fileID: 499924948}
+  _Questions:
   - '"I have a fully furnished 2 bedroom & I need a roommate! Just a few questions
     tho..."'
   - '"Are you a night owl or an early riser?"'
@@ -912,8 +912,8 @@ MonoBehaviour:
   - '"Can I have some belly rubs?"'
   - Let's be roommates!
   - I can't live with you...
-  Answer1: {fileID: 1078108629}
-  Answer1A:
+  _Answer1: {fileID: 1078108629}
+  _Answer1A:
   - Great!
   - Night Owl
   - Veggies
@@ -921,8 +921,8 @@ MonoBehaviour:
   - Love 'em
   - The most
   - YEP
-  Answer2: {fileID: 1711415840}
-  Answer2A:
+  _Answer2: {fileID: 1711415840}
+  _Answer2A:
   - Okay...
   - Early riser
   - Anchovies
@@ -930,6 +930,20 @@ MonoBehaviour:
   - Hate 'em
   - Not rly
   - IDK
+  _CatSprite: {fileID: 350182595}
+  _CatSprites:
+  - {fileID: 21300000, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300002, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300004, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300006, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300008, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300010, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300012, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300014, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300016, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300018, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300020, guid: b0db398814c267843b917ed12678b5e5, type: 3}
+  - {fileID: 21300022, guid: b0db398814c267843b917ed12678b5e5, type: 3}
 --- !u!1 &1640534434
 GameObject:
   m_ObjectHideFlags: 0
